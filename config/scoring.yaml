@@ -1,0 +1,16 @@
+# Category weights sum to 100. Tune without changing check code.
+categories:
+  on_page: 20
+  technical: 20
+  social: 10
+  performance: 20
+  accessibility: 10
+  ai_readability: 20
+
+# Per-check weights. Missing ids fall back to CheckDefinition.default_weight.
+# Stage 2 seeds four checks; Stage 3 fills the rest.
+checks:
+  on_page.title_length: 8
+  on_page.meta_description: 6
+  on_page.h1_presence: 8
+  technical.https: 10
